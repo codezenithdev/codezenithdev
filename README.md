@@ -163,7 +163,7 @@ know-my-health list-cost --profile prod --start-date 2025-01-01 --end-date 2025-
 | Role | Company | Period |
 |------|---------|--------|
 | 🤖 AI Engineer Intern | Suede *(AI2 Incubator-backed)* | Jan–Mar 2026 |
-| 🛠 Backend Developer | Digital Accessibility Remediation, UIS | Jun–Dec 2025 |
+| 🛠 Backend Developer | Digital Accessibility Remediation, UIS | Jan–Dec 2025 |
 | 💻 Software Developer | MQuotient Pvt. Ltd. | Jan–May 2024 |
 | 🏥 Software Developer | Peakhealth Solutions | Dec 2022–Dec 2023 |
 | ⚙️ Full Stack Intern | Controlytics AI | May–Dec 2022 |
