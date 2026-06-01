@@ -4,7 +4,7 @@
 ### Backend Engineer · AI-Integrated Systems · AWS Certified
 
 **Building production-grade AI backends — not demos, not wrappers.**
-Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
+Java · Python · Go · LangGraph · LangChain4j · Spring AI · MCP · AWS
 
 📍 California &nbsp;|&nbsp; 🎓 M.S. Computer Science, UIS '25 &nbsp;|&nbsp; 🔍 Open to Founding Eng / Backend / Cloud roles
 
@@ -21,7 +21,11 @@ Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
 **AI / LLM**
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![LangGraph](https://img.shields.io/badge/LangGraph-0.6+-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)
+![LangSmith](https://img.shields.io/badge/LangSmith-Observability-F97316?style=flat-square&logo=chainlink&logoColor=white)
 ![Spring AI](https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG-pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-8A2BE2?style=flat-square)
@@ -35,7 +39,10 @@ Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 
 **Cloud & Infra**
 
@@ -53,6 +60,15 @@ Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
 ![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+
+**Testing & Observability**
+
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
+![Supertest](https://img.shields.io/badge/Supertest-API_Testing-333333?style=flat-square)
+![LangSmith](https://img.shields.io/badge/LangSmith-Tracing-F97316?style=flat-square&logo=chainlink&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?style=flat-square&logo=swagger&logoColor=black)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 
 **Certifications**
 
@@ -84,7 +100,46 @@ Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
 
 ## 🚀 Featured Projects
 
-### 1. 🛍️ Suede — B2B SaaS for Shopify Merchants *(AI2 Incubator-backed)*
+### 1. 🧠 Multi-Agent Architect — LangGraph Supervisor Pipeline
+
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python)](https://github.com/codezenithdev/multi-agent-architect)
+[![LangGraph](https://img.shields.io/badge/LangGraph-0.6+-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)](https://github.com/codezenithdev/multi-agent-architect)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)](https://github.com/codezenithdev/multi-agent-architect)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?style=flat-square&logo=openai)](https://github.com/codezenithdev/multi-agent-architect)
+
+> Production-grade multi-agent system where **11 specialized agents** collaborate to plan, design, implement, security-audit, test, and review software from a single plain-English requirement — driven by a deterministic supervisor with self-healing fix loops.
+
+- **Supervisor pattern**: pure-Python router dispatches to planner, architect, frontend/backend/database designers, coder, bug detector, tester, reviewer, and aggregator
+- **Self-healing loops**: `bug_detector → coder → tester → reviewer` cycle with a circuit breaker (max 3 iterations) — always terminates
+- **Framework-aware**: detects stack from the requirement (Next.js, FastAPI, Django, Rails, Spring, Gin, NestJS, …) for idiomatic output
+- **Free offline mock mode** + real GPT-4o / gpt-4o-mini switch — zero cost to run locally
+- Outputs a full 10-section design-and-implementation document compiled by the aggregator agent
+
+🔗 **[codezenithdev/multi-agent-architect](https://github.com/codezenithdev/agent-squad)**
+
+---
+
+### 2. 🔍 PR Review Agent — AI-Powered Code Review
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python)](https://github.com/codezenithdev/pr_review_agent)
+[![LangGraph](https://img.shields.io/badge/LangGraph-0.2-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)](https://github.com/codezenithdev/pr_review_agent)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat-square&logo=fastapi)](https://github.com/codezenithdev/pr_review_agent)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28-FF4B4B?style=flat-square&logo=streamlit)](https://github.com/codezenithdev/pr_review_agent)
+
+> Automated GitHub PR analysis — fetches diffs, commits, and metadata, then runs a **5-node LangGraph pipeline** to score, verdict, and comment on code quality with real-time streaming.
+
+- **Real-time progress** via Server-Sent Events (SSE) streamed directly into the Streamlit UI
+- **GitHub integration**: public + private repos, graceful rate-limit handling, up to 20 files / 10 commits per review
+- **Customizable focus areas**: security, performance, maintainability, testability, best practices
+- **LangSmith tracing** + user feedback loop for continuous model improvement
+- **Demo mode**: full UI and pipeline runnable without any API keys using mock data
+- SQLite (dev) / PostgreSQL (prod) via SQLAlchemy — reviews persist across restarts
+
+🔗 **[codezenithdev/pr_review_agent](https://github.com/codezenithdev/pr_review_agent)**
+
+---
+
+### 3. 🛍️ Suede — B2B SaaS for Shopify Merchants *(AI2 Incubator-backed)*
 > Full-stack platform that helps Shopify merchants review inbound order data, approve line items, and create draft products — powered by LLM-driven PDF extraction and real-time AWS infrastructure.
 
 **Role:** AI Engineer on a founding team of ~3. Owned end-to-end feature delivery across the full stack.
@@ -102,7 +157,7 @@ Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
 
 ---
 
-### 2. 🎵 CNTNDR — Beat Battle Platform
+### 4. 🎵 CNTNDR — Beat Battle Platform
 > Social music competition app where producers upload tracks, enter audio battles, vote, and climb leaderboards — built across three microservices with a real-time backend.
 
 **Role:** Full-stack contributor. Owned bracket logic, track submission flows, and React UI from scoping through production.
@@ -119,24 +174,7 @@ Java · Python · Go · LangChain4j · Spring AI · MCP · AWS
 
 ---
 
-### 3. 🔍 Corseco QC — AI-Powered Quality Inspection System
-
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python)](https://github.com/codezenithdev/corseco-qc-assessment)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi)](https://github.com/codezenithdev/corseco-qc-assessment)
-[![Claude Vision](https://img.shields.io/badge/Claude_Vision-API-8A2BE2?style=flat-square)](https://github.com/codezenithdev/corseco-qc-assessment)
-[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker)](https://github.com/codezenithdev/corseco-qc-assessment)
-
-> Computer vision pipeline that inspects product images, classifies defects (Good / Minor / Major), draws bounding box overlays, and generates automated QC reports.
-
-- REST API with single-image, batch, and demo inspection modes
-- Swagger / ReDoc auto-docs · React + Vite + Tailwind dashboard
-- Edge deployment architecture: YOLO v8 / TensorRT / ONNX / Llama 3.2 for offline ops
-
-🔗 **[codezenithdev/corseco-qc-assessment](https://github.com/codezenithdev/corseco-qc-assessment)**
-
----
-
-### 4. ☁️ know-my-health — AWS CLI Observability Tool
+### 5. ☁️ know-my-health — AWS CLI Observability Tool
 
 [![Python](https://img.shields.io/badge/Python-boto3-3776AB?style=flat-square&logo=python)](https://github.com/codezenithdev/health_status)
 [![AWS](https://img.shields.io/badge/AWS-EC2_EBS_ELB_S3-FF9900?style=flat-square&logo=amazonwebservices)](https://github.com/codezenithdev/health_status)
